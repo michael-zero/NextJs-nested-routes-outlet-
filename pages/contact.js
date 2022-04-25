@@ -1,19 +1,19 @@
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 
-export default function Index() {
+export default function Contact() {
   return (
     <section>
-      <h2>Layout Example (Index)</h2>
+      <h2>Layout Example (Contact)</h2>
       <p>
         This example adds a property <code>getLayout</code> to your page,
         allowing you to return a React component for the layout. This allows you
-        to define the layout on a per-page basis. Since  returning a
+        to define the layout on a per-page basis. Since returning a
         function, we can have complex nested layouts if desired.
       </p>
       <p>
         When navigating between pages, we want to persist page state (input
-        values, scroll position, etc) for a Single-Page Application (SPA)
+        values, scroll position, etc.) for a Single-Page Application (SPA)
         experience.
       </p>
       <p>
@@ -25,14 +25,14 @@ export default function Index() {
       <h3>Try It Out</h3>
       <p>
         To visualize this, try tying in the search input in the{' '}
-        <code>Sidebar</code> and then changing routes.notice the input
+        <code>Sidebar</code> and then changing routes. notice the input
         state is persisted.
       </p>
     </section>
   )
 }
 
-Index.getLayout = function getLayout(page) {
+Contact.getLayout = function getLayout(page) {
   return (
     <Layout>
       <Sidebar />

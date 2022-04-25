@@ -1,19 +1,19 @@
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 
-export default function Index() {
+export default function About() {
   return (
     <section>
-      <h2>Layout Example (Index)</h2>
+      <h2>Layout Example (About)</h2>
       <p>
         This example adds a property <code>getLayout</code> to your page,
         allowing you to return a React component for the layout. This allows you
-        to define the layout on a per-page basis. Since  returning a
+        to define the layout on a per-page basis. Since returning a
         function, we can have complex nested layouts if desired.
       </p>
       <p>
         When navigating between pages, we want to persist page state (input
-        values, scroll position, etc) for a Single-Page Application (SPA)
+        values, scroll position, etc.) for a Single-Page Application (SPA)
         experience.
       </p>
       <p>
@@ -32,7 +32,7 @@ export default function Index() {
   )
 }
 
-Index.getLayout = function getLayout(page) {
+About.getLayout = function getLayout(page) {
   return (
     <Layout>
       <Sidebar />
